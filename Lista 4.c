@@ -14,12 +14,12 @@ int main(){
 	int i = 0;
 
 	for(i; i < 6; i++){
-		printf("valor %d: ", i +1);
-		scanf("%d", &valores[i]);
+		printf("numeros %d: ", i +1);
+		scanf("%d", &numeros[i]);
 	}
-	printf("Os valores lidos foram: ");
+	printf("Os numeros lidos foram: ");
 	for(i = 0; i < 6; i++){
-		printf(" %d", valores[i]);
+		printf(" %d", numeros[i]);
 		
 	}
 	return 0;
@@ -34,13 +34,13 @@ int main(){
 #include <stdio.h>
 
 int main(){
-	int Numeros[6];
+	int numeros[6];
 	int i = 0;
 	int ordem;
 
 	for(i; i < 6; i++){
 		printf("Digite o valor %d: ", i +1);
-		scanf("%d", &valores[i]);
+		scanf("%d", &numeros[i]);
 	}
 	
 	printf(" os valores na ordem em que foram inseridos digite 1, para a ordem inversa digite 2: ");
@@ -68,16 +68,16 @@ int main(){
 #include <stdlib.h>
 
 int main() {
-    float valores[5];
+    float numeros[5];
     float soma = 0.0;
     float media;
     int i;
 	
-    printf("Digite cinco valores: \n");
+    printf("Digite cinco numeros: \n");
 	
     for (i = 0; i < 5; ++i) {
-        scanf("%f", &valores[i]);
-        soma = soma + valores[i];
+        scanf("%f", &numeros[i]);
+        soma = soma + numeros[i];
     }
 	
     media = soma / 5;
@@ -99,13 +99,13 @@ int main() {
     int soma;
     printf("Escreva 8 numeros i: \n");
     for (i = 0; i < 8; i++) {
-        scanf("%d", &valores[i]);
+        scanf("%d", &numeros[i]);
     }
     printf("Digite 2 numeros de que estão de 0 a 7: \n");
     scanf("%d", &x);
     scanf("%d", &y);
-    soma = valores[x] + valores[y];
-    printf("O valor encontrado na posicao %d foi %d e na posicao %d foi %d, a soma deles resulta em %d", x, valores[x], y, valores[y], soma);
+    soma = numeros[x] + numeros[y];
+    printf("O valor encontrado na posicao %d foi %d e na posicao %d foi %d, a soma deles resulta em %d", x, numeros[x], y, numeros[y], soma);
 
 return 0;
 }
@@ -123,7 +123,7 @@ int main() {
 	
     vetor_a[4] = 100;
 	
-    printf("Valores do array vetor_a: \n");
+    printf("Valores do vetor_a: \n");
 	
     for (i = 0; i < 6; i++) {
         printf("%d\n", vetor_a[i]);
