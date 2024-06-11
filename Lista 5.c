@@ -26,7 +26,7 @@ int main() {
 #include <stdlib.h>
 
 int main() {
-    char caracters[51];
+    char caracteres[51];
     int i;
     int quantidade_caracteres = 0;
     
@@ -34,9 +34,9 @@ int main() {
     gets(caracteres );
     
     for (i = 0; string[i] != '\0'; i++) {
-        quantidade_caracteres_string++;
+        quantidade_caracteres++;
     }
-    printf("A string tem %d caracteres", quantidade_caracteres_string);
+    printf("A string tem %d caracteres", quantidade_caracteres);
 
   return 0;
 }
@@ -81,7 +81,7 @@ int main() {
     printf("Digite caracteres para ver ser estes estão contidos nos caracteres anteriores \n");
     gets(caracteres_2);
     
-    if (strlen(caracteres, caracteres_2) != NULL) {
+    if (strstr(caracteres, caracteres_2) != NULL) {
         printf("Os caracteres %s estão contidos nos caracteres %s", caracteres_2, caracteres);
     } else {
         printf("O caracter %s nao esta contido no caracter %s", caracteres_2, caracteres);
